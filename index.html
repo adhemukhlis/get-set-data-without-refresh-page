@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>without refresh page</title>
+</head>
+<body>
+	<div style="color: red;">
+		in this case, used data usage 100-110byte/record
+	</div>
+	<table>
+		<tr>
+			<td>id</td>
+			<td><input type="text" id="id_anggota"></td>
+		</tr>
+		<tr>
+			<td>nama</td>
+			<td><input type="text" id="nama"></td>
+		</tr>
+		<tr>
+			<td>jenis kelamin</td>
+			<td><select id="jenis_kelamin">
+  					<option value="Pria">Pria</option>
+  					<option value="Wanita">Wanita</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>tanggal lahir</td>
+			<td><input type="text" id="tgl"> <input type="text" id="bln"> <input type="text" id="thn"></td>
+		</tr>
+	</table>
+	<button onclick="add()">add</button>
+	<button onclick="update()">update</button>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>id</td>
+				<td>Nama</td>
+				<td>jenis Kelamin</td>
+				<td>Tanggal Lahir</td>
+				<td>Action</td>
+			</tr>
+		</thead>
+		<tbody id="tbl_anggota">
+		</tbody>
+	</table>
+	
+</body>
+<!-- jquery versi 3.2.1 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- js add, update, delete -->
+<script src="js/add.js"></script>
+<script src="js/update.js"></script>
+<script src="js/delete.js"></script>
+
+<!-- js get data from server -->
+<script src="js/x-json-parse.js"></script>
+
+<!-- js main -->
+<script src="js/script.js"></script>
+
+</html>
